@@ -1,0 +1,25 @@
+$font-serif: "Ibarra real Nova", serif;
+$font-sans: Inter, sans-serif;
+$accent: rgb(125 0 75);
+
+:root {
+  font-family: $font-serif;
+  line-height: 1.5;
+}
+
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-family: $font-sans;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  margin-block: 0;
+}
+
+header {
+  font-weight: 700;
+  color: $accent;
+}
