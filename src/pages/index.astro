@@ -1,7 +1,5 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
@@ -11,38 +9,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
-    <Header title={SITE_TITLE} />
     <main>
       <h1>saito.style</h1>
+      <p>Hi! I am Carlos Saito</p>
       <p>
-        Here we go again. This is the forth attempt of building my own site,
-        where I am supposed to do interesting things.
+        I work as a developer at KTH (Royal Institute of Technology) in
+        Stockholm
       </p>
       <p>
-        For example, I could write about myself so I can increase the chances of
-        being hired
+        I was hired initially as “Full-stack developer” and I’m pivoting
+        recently to a more “UX engineer” role
       </p>
-      <p>
-        I could also style this website better so people can see my HTML, CSS
-        and JavaScript proficiency (instead of using the <a
-          href="https://astro.build">Astro</a
-        > default "blog template")
-      </p>
-      <p>
-        Or I can start writing things in my new <a href="/blog">blog</a> because
-        I guess I have interesting things to share
-      </p>
-      <p>
-        Or I can just tell you
-        <a href="/blog/why-saito-style"
-          >What is the story behind this website's URL (i.e. "saito.style")</a
-        >. I don't know if that is <em>interesting enough for you</em>
-      </p>
-
-      <hr />
-
-      <p>Anyways, welcome to my site. Thanks for your visit!</p>
     </main>
-    <Footer />
   </body>
 </html>
