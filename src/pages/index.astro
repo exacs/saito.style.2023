@@ -10,22 +10,21 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
-    <h1>saito.style</h1>
     <header>
-      <p>Hi! I am Carlos Saito</p>
+      <h1>saito.style</h1>
+      <p>Hi! I am Carlos Saito,</p>
       <p>
-        I work as a developer at KTH (Royal Institute of Technology) in
-        Stockholm
+        work as a developer at KTH (Royal Institute of Technology) in Stockholm;
       </p>
       <p>
-        I was hired initially as “Full-stack developer” and I’m pivoting
-        recently to a more “UX engineer” role
+        was hired initially as “Full-stack developer” and am pivoting recently
+        to a more “UX engineer” role
       </p>
     </header>
     <main>
-      <h2>Projects when I worked at KTH (2018-2024)</h2>
-      <section>
-        <div>
+      <h2>Projects at KTH where I worked (2018-2024)</h2>
+      <section class="project">
+        <div class="project-title">
           <h3>Design system "KTH Style" and new visual identity</h3>
           <dl>
             <dt>Role</dt>
@@ -34,85 +33,96 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
             <dd>2023-2024</dd>
           </dl>
         </div>
-        <p>
-          KTH has a new visual identity. The IT department and the web team was
-          in charge of leading the digital side of the evolution.
-        </p>
-        <p>
-          Design and prototype: co-organised design workshops with UX designers,
-          copywriters and stakeholders and understand problems to solve, their
-          needs and their opinions; prototyped and designed the first pieces of
-          the new identity (the website header).
-        </p>
-        <p>
-          Implementation: created a new version of the KTH Design System “KTH
-          Style” and helped other teams to implement the new design
-        </p>
-        <h4>Challenges</h4>
-        <ul>
-          <li>The new version of KTH Style is no longer based on Bootstrap</li>
-          <li>
-            Create a library retro-compatible with the old version so teams can
-            upgrade in small steps
-          </li>
-        </ul>
-        <h4>Design principles</h4>
-        <p>The new version of KTH Style is</p>
-        <ul>
-          <li>
-            Modular: instead of importing the whole library (including parts
-            outside of developers control), developers choose what parts to
-            import
-          </li>
-          <li>
-            Simple: the new version has less code and does not create unused
-            abstractions
-          </li>
-          <li>Systematic: everything is defined as tokens (variables)</li>
-        </ul>
+        <div>
+          <p>
+            KTH has a new visual identity. The IT department and the web team
+            was in charge of leading the digital side of the evolution.
+          </p>
+          <p>
+            Design and prototype: co-organised design workshops with UX
+            designers, copywriters and stakeholders and understand problems to
+            solve, their needs and their opinions; prototyped and designed the
+            first pieces of the new identity (the website header).
+          </p>
+          <p>
+            Implementation: created a new version of the KTH Design System “KTH
+            Style” and helped other teams to implement the new design
+          </p>
+          <h4>Challenges</h4>
+          <ul>
+            <li>
+              The new version of KTH Style is no longer based on Bootstrap
+            </li>
+            <li>
+              Create a library retro-compatible with the old version so teams
+              can upgrade in small steps
+            </li>
+          </ul>
+          <h4>Design principles</h4>
+          <p>The new version of KTH Style is</p>
+          <ul>
+            <li>
+              Modular: instead of importing the whole library (including parts
+              outside of developers control), developers choose what parts to
+              import
+            </li>
+            <li>
+              Simple: the new version has less code and does not create unused
+              abstractions
+            </li>
+            <li>Systematic: everything is defined as tokens (variables)</li>
+          </ul>
+        </div>
       </section>
     </main>
     <aside>
-      <h2>past work experience</h2>
-      <h3>COAM (Official College of Architects of Madrid)</h3>
-      <p>
-        Developer of “Revista Arquitectura”, the web of the COAM’s magazine.
-        Adapt the paper magazine designed by architects into a web; develop the
-        whole website (front-end and back-end) from scratch to the deployment
-        and maintenance.
-      </p>
-      <h3>Part-time full-stack developer trainee</h3>
-      <p>
-        Developer of the “Ontag” project, an open-source tool for journalists
-        aimed to give answers to relevant questions through annotations on news
-        articles. Part of a multidisciplinary and international team formed by
-        journalists and sociologists of Common Action Forum and computer
-        engineers of the Ontology Engineering Group.
-      </p>
-      <h2>more things about me</h2>
-      <h3>education</h3>
-      <ul>
-        <li>
-          2013/sep > 2018/jun. Computer Engineer Undergraduate at Technical
-          University of Madrid.
-        </li>
-        <li>
-          2018/feb > 2018/jun. Degree Project in Computer Science during an
-          Erasmus exchange at Uppsala University.
-        </li>
-      </ul>
+      <section>
+        <h2>past work experience</h2>
+        <h3>COAM (Official College of Architects of Madrid)</h3>
+        <p>
+          Developer of “Revista Arquitectura”, the web of the COAM’s magazine.
+          Adapt the paper magazine designed by architects into a web; develop
+          the whole website (front-end and back-end) from scratch to the
+          deployment and maintenance.
+        </p>
+        <h3>Part-time full-stack developer trainee</h3>
+        <p>
+          Developer of the “Ontag” project, an open-source tool for journalists
+          aimed to give answers to relevant questions through annotations on
+          news articles. Part of a multidisciplinary and international team
+          formed by journalists and sociologists of Common Action Forum and
+          computer engineers of the Ontology Engineering Group.
+        </p>
+      </section>
+      <section>
+        <h2>more things about me</h2>
+        <h3>education</h3>
+        <ul>
+          <li>
+            2013/sep > 2018/jun. Computer Engineer Undergraduate at Technical
+            University of Madrid.
+          </li>
+          <li>
+            2018/feb > 2018/jun. Degree Project in Computer Science during an
+            Erasmus exchange at Uppsala University.
+          </li>
+        </ul>
 
-      <h3>mini-projects</h3>
-      <ul>
-        <li>
-          2017/sep > 2018/jun. “Fika” host at Östgöta student Nation in Uppsala.
-        </li>
-        <li>2016/oct. Volunteer at Medialab Prado working on Liqen Project</li>
-        <li>
-          2016/mar. First prize in a web-programming hackathon organized by
-          Horbito Inc.
-        </li>
-      </ul>
+        <h3>mini-projects</h3>
+        <ul>
+          <li>
+            2017/sep > 2018/jun. “Fika” host at Östgöta student Nation in
+            Uppsala.
+          </li>
+          <li>
+            2016/oct. Volunteer at Medialab Prado working on Liqen Project
+          </li>
+          <li>
+            2016/mar. First prize in a web-programming hackathon organized by
+            Horbito Inc.
+          </li>
+        </ul>
+      </section>
     </aside>
   </body>
 </html>
