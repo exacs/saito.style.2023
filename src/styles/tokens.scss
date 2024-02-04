@@ -7,6 +7,13 @@ $font-heading-xs: 600 1rem / 1.5rem $font-sans;
 $font-default: 400 1.075rem / 1.5rem $font-serif;
 
 $color-accent: rgb(221, 116, 50);
+$color-accent-gradient: linear-gradient(
+  160deg,
+  rgba(244, 0, 103, 1) 0%,
+  rgba(9, 9, 121, 1) 36%,
+  rgba(255, 0, 245, 1) 61%,
+  rgba(255, 0, 0, 1) 100%
+);
 
 @mixin visually-hidden {
   position: absolute;

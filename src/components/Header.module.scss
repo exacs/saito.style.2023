@@ -12,7 +12,8 @@ nav {
 
 nav a {
   &[aria-current="page"] {
-    color: red;
+    color: white;
+    background: tokens.$color-accent-gradient;
   }
 }
 
