@@ -26,6 +26,7 @@ header p {
 @supports (background-clip: text) {
   header p {
     background: linear-gradient(45deg, blue, red);
+    background-attachment: fixed;
     background-clip: text;
     color: transparent;
   }

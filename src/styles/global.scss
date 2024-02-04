@@ -36,7 +36,14 @@ h2 {
 
 @supports (background-clip: text) {
   h2 {
-    background: linear-gradient(45deg, blue, red);
+    background: linear-gradient(
+      160deg,
+      rgba(244, 0, 103, 1) 0%,
+      rgba(9, 9, 121, 1) 36%,
+      rgba(255, 0, 245, 1) 61%,
+      rgba(255, 0, 0, 1) 100%
+    );
+    background-attachment: fixed;
     background-clip: text;
     color: transparent;
   }
