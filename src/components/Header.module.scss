@@ -2,17 +2,7 @@
 
 header {
   padding-block-end: 1rem;
-  border-block-end: 1px solid black;
   margin-block-end: 2rem;
-}
-
-header p {
-  margin-block: 0;
-  color: tokens.$color-accent;
-
-  &:not(:last-child) {
-    font-weight: 900;
-  }
 }
 
 nav {
@@ -21,19 +11,8 @@ nav {
 }
 
 nav a {
-  color: unset;
-
   &[aria-current="page"] {
     color: red;
-  }
-}
-
-@supports (background-clip: text) {
-  header p {
-    background: linear-gradient(45deg, blue, red);
-    background-attachment: fixed;
-    background-clip: text;
-    color: transparent;
   }
 }
 

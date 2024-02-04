@@ -23,6 +23,10 @@ body {
   margin-inline: 1rem;
 }
 
+a {
+  color: unset;
+}
+
 h1 {
   font: tokens.$font-heading-l;
   margin-block-start: 4rem;
