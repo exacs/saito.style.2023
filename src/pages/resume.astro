@@ -1,6 +1,7 @@
 ---
 import "./resume.scss";
 import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
@@ -10,17 +11,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
-    <header>
-      <div class="logo">saito.style</div>
-      <p>Hi! I am Carlos Saito,</p>
-      <p>
-        work as a developer at KTH (Royal Institute of Technology) in Stockholm;
-      </p>
-      <p>
-        was hired initially as “Full-stack developer” and am pivoting recently
-        to a more “UX engineer” role
-      </p>
-    </header>
+    <Header />
     <main>
       <h1>Resumé</h1>
       <article>
