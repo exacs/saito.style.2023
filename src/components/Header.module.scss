@@ -15,6 +15,19 @@ header p {
   }
 }
 
+nav {
+  font: tokens.$font-heading-xs;
+  display: flex;
+}
+
+nav a {
+  color: unset;
+
+  &[aria-current="page"] {
+    color: red;
+  }
+}
+
 @supports (background-clip: text) {
   header p {
     background: linear-gradient(45deg, blue, red);
@@ -25,5 +38,10 @@ header p {
 }
 
 .logo {
+  display: inline-block;
+  color: unset;
   font: tokens.$font-heading-l;
+  text-decoration-thickness: 0.25rem;
+  text-underline-offset: 0.1rem;
+  margin-block-end: 0.5rem;
 }

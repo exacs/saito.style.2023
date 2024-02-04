@@ -1,9 +1,10 @@
 ---
 import styles from "./Header.module.scss";
+const url = Astro.url;
 ---
 
 <header>
-  <div class={styles.logo}>saito.style</div>
+  <a href="/" class={styles.logo}>saito.style</a>
   <p>Hi! I am Carlos Saito,</p>
   <p>
     work as a developer at KTH (Royal Institute of Technology) in Stockholm;
@@ -13,6 +14,11 @@ import styles from "./Header.module.scss";
     more “UX engineer” role
   </p>
   <nav>
-    <a href="/resume">resumé <span>(open for hiring!)</span></a>
+    <a
+      href="/resume"
+      aria-current={url.pathname === "/resume" ? "page" : "false"}>resumé</a
+    >
+    <!-- <a href="/blog">blog</a> -->
+    <!-- <a href="/blog"></a> -->
   </nav>
 </header>
