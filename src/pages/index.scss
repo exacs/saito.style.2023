@@ -75,8 +75,10 @@ aside {
     display: grid;
     grid-template:
       "header header"
-      "main aside" / 2fr 1fr;
-    gap: 2rem;
+      "main aside"
+      "footer footer"
+      / 2fr 1fr;
+    gap: 5rem 2rem;
   }
 
   header {
@@ -89,7 +91,28 @@ aside {
 
   aside {
     grid-area: aside;
-    border-inline-start: 1px solid black;
     padding-inline-start: 2rem;
+    position: relative;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  aside::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(
+      160deg,
+      rgba(244, 0, 103, 1) 0%,
+      rgba(9, 9, 121, 1) 36%,
+      rgba(255, 0, 245, 1) 61%,
+      rgba(255, 0, 0, 1) 100%
+    );
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
   }
 }
