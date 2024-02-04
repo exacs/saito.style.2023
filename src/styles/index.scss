@@ -108,3 +108,51 @@ section.large {
     height: 100%;
   }
 }
+
+.attachment {
+  margin-block: 10rem;
+  background-image: url(/marble.jpg);
+  background-attachment: fixed;
+  padding: 2rem;
+
+  > div {
+    margin-block: -5rem;
+    border: black solid 5px;
+    min-height: 10rem;
+  }
+
+  blockquote {
+    font: tokens.$font-quote;
+    position: relative;
+  }
+
+  .short {
+    position: absolute;
+  }
+
+  span {
+    background-attachment: fixed;
+    background-clip: text;
+    color: transparent;
+  }
+
+  div.short span {
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 45%,
+      rgba(0, 0, 0, 0) 55%
+    );
+  }
+
+  div:is(:not(.short)) > span {
+    background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 45%,
+      rgba(0, 0, 0, 0) 55%
+    );
+  }
+}
+
+footer {
+  min-height: 100vh;
+}
