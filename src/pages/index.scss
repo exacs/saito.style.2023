@@ -23,6 +23,10 @@ header p {
   }
 }
 
+.project {
+  margin-block-end: 4rem;
+}
+
 .project-title,
 .project-title h3 {
   font: tokens.$font-heading-xs;
@@ -40,6 +44,7 @@ header p {
 
 aside {
   display: grid;
+  align-content: start;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   gap: 1rem 2rem;
 }
