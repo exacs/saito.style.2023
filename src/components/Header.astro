@@ -1,16 +1,12 @@
 ---
 import styles from "./Header.module.scss";
-const url = Astro.url;
+import HeaderLink from "./HeaderLink.astro";
 ---
 
 <header>
   <a href="/" class={styles.logo}>saito.style</a>
   <nav>
-    <a
-      href="/resume"
-      aria-current={url.pathname === "/resume" ? "page" : "false"}>résumé</a
-    >
-    <!-- <a href="/blog">blog</a> -->
-    <!-- <a href="/blog"></a> -->
+    <HeaderLink href="/">home</HeaderLink>
+    <HeaderLink href="/resume">résumé</HeaderLink>
   </nav>
 </header>

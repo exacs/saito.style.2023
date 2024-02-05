@@ -8,6 +8,7 @@ header {
 nav {
   font: tokens.$font-heading-xs;
   display: flex;
+  gap: 0.25rem 1rem;
 }
 
 nav a {
