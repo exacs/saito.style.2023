@@ -75,37 +75,42 @@ section.large {
       "header header"
       "intro intro"
       "main aside"
+      "notes notes"
       / 2fr 1fr;
     gap: 0 2rem;
-  }
 
-  h1 {
-    grid-area: header;
-  }
+    > h1 {
+      grid-area: header;
+    }
 
-  div.intro {
-    grid-area: intro;
-  }
+    > div.intro {
+      grid-area: intro;
+    }
 
-  article {
-    grid-area: main;
-  }
+    > article {
+      grid-area: main;
+    }
 
-  aside {
-    grid-area: aside;
-    padding-inline-start: 2rem;
-    position: relative;
-  }
+    > aside {
+      grid-area: aside;
+      padding-inline-start: 2rem;
+      position: relative;
+    }
 
-  aside::before {
-    content: "";
-    position: absolute;
-    background: tokens.$color-accent-gradient;
-    background-attachment: fixed;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 100%;
+    > aside::before {
+      content: "";
+      position: absolute;
+      background: tokens.$color-accent-gradient;
+      background-attachment: fixed;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 100%;
+    }
+
+    > .notes {
+      grid-area: notes;
+    }
   }
 }
 
@@ -154,6 +159,13 @@ section.large {
   }
 }
 
+.list-of-notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1rem 2rem;
+}
+
 footer {
+  padding-block-start: 8rem;
   min-height: 100vh;
 }
