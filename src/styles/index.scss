@@ -109,47 +109,48 @@ section.large {
   }
 }
 
-.attachment {
+.over-under {
   margin-block: 10rem;
-  background-image: url(/marble.jpg);
+  max-width: 30rem;
+  margin-inline: auto;
+  background-image: linear-gradient(
+    0deg,
+    rgb(255, 0, 255) 0%,
+    rgb(255 255 255) 100%
+  );
   background-attachment: fixed;
   padding: 2rem;
 
-  > div {
-    margin-block: -5rem;
-    border: black solid 5px;
-    min-height: 10rem;
-  }
-
   blockquote {
+    margin-block: -5rem;
+    border: black solid 0.5rem;
+    min-height: 10rem;
     font: tokens.$font-quote;
     position: relative;
   }
 
-  .short {
-    position: absolute;
-  }
-
-  span {
+  .over {
+    background-image: linear-gradient(
+      0deg,
+      rgb(255 255 255 / 1) 0%,
+      rgb(255 255 255 / 1) 40%,
+      rgb(255 255 255 / 0) 45%
+    );
     background-attachment: fixed;
     background-clip: text;
     color: transparent;
   }
 
-  div.short span {
+  .under {
     background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 1) 45%,
-      rgba(0, 0, 0, 0) 55%
+      rgb(243 118 243 / 0) 0%,
+      rgb(243 118 243 / 0) 40%,
+      rgb(243 118 243 / 1) 45%
     );
-  }
-
-  div:is(:not(.short)) > span {
-    background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 45%,
-      rgba(0, 0, 0, 0) 55%
-    );
+    background-attachment: fixed;
+    background-clip: text;
+    color: transparent;
   }
 }
 
